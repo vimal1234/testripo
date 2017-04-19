@@ -52,7 +52,7 @@ class RestClient
 	{
 		
 		
-		
+		$str="The entire Pro Git book, written by vimal shekhat j, is available here. All content is licensed under  Amazon.com.";
 		$this->url .= 'Categories';
 		if ($categoryId !== null) {
 			$this->url .= '/' . $categoryId;
