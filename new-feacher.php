@@ -1,0 +1,1 @@
+This shows you the state of the repository before you started your feature. From here, you have the option to merge in the completed feature, branch off a brand new, unrelated feature, or do some work with the stable version of your project.
