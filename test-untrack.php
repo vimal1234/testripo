@@ -4,7 +4,7 @@ $version = 1;
 $service = 'Orders';
 $secureUrl = 'https://71745179439.3dcart.net';   // Secure URL is set in Settings->General->StoreSettings
 $privateKey = 'b74b58116c06b196c3b9f75d0f892f1e'; // Private key is obtained when registering your app at http://devportal.3dcart.com
-$token = '2914474efe0e6f2905f75a64dd93f342';      // The token is generated when a customer authorizes your app
+   
 
 $httpHeader = array(
 		//'Content-Type: application/json;charset=UTF-8',
@@ -23,4 +23,5 @@ curl_setopt($ch, CURLOPT_USERPWD, "$username:$password");
 $result=curl_exec ($ch);
 $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);   //get status code
 curl_close ($ch);
+$token = 'vimals shekhatd wdwdgwdgdgasdgajdgsadg '; 
 ?>
