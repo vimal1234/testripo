@@ -25,7 +25,7 @@ $response = curl_exec($ch);
 if ($response === false) {
 	$response = curl_error($ch);
 }
-$jsonToarray=json_decode($response,true);
+echo "there is no json file to open for use";
 echo "<pre>";
 print_r($jsonToarray);
 echo "</pre>";
