@@ -24,11 +24,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch);
 if ($response === false) {
 	$response = curl_error($ch);
-}
-echo "there is no json file to open for use";
-echo "<pre>";
-print_r($jsonToarray);
-echo "</pre>";
+
 
 $f = fopen('output.csv', 'w');
 if ($f != false){
