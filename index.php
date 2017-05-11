@@ -6,9 +6,13 @@ $secureUrl = 'https://71745179439.3dcart.net';   // Secure URL is set in Setting
 $privateKey = 'b74b58116c06b196c3b9f75d0f892f1e'; // Private key is obtained when registering your app at http://devportal.3dcart.com
 $token = '2914474efe0e6f2905f75a64dd93f342';      // The token is generated when a customer authorizes your app
 // initialize cURL session
-
-echo $host . '/3dCartWebAPI/v' . $version . '/' . $service;
-
+);
+curl_setopt($ch, CURLOPT_HTTPHEADER, $httpHeader);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+// [ ... addtional cURL options as needed ... ]
+$response = curl_exec($ch);
+if ($response === false) {
+	$response = curl_error($ch)
 $ch = curl_init($host . '/3dCartWebAPI/v' . $version . '/' . $service);
 // set headers
 $httpHeader = array(
