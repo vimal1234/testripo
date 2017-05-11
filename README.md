@@ -1,4 +1,4 @@
-GitHub combines a syntax for formatting text called GitHub Flavored Markdown with a few unique writing features.
+vimal j shekhat GitHub combines a syntax for formatting text called GitHub Flavored Markdown with a few unique writing features.
 
 Markdown is an easy-to-read, easy-to-write syntax for formatting plain text.
 
