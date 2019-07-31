@@ -1,10 +1,17 @@
-import React, { Component } from "react";
-export default class GameSheetDownloadComponent extends Component {
-  render() {
-    return (
-      <button style={this.props.CssManager.gameShareIcon()}>
-        <img src="images/download-icon-gray.png" alt="" />
-      </button>
-    );
+
+import React, { Component } from 'react';
+
+export default class GameSheetDownloadComponent extends Component{
+
+constructor(props) {
+    super(props);
   }
+render(){
+	return (
+    <a href="#">
+		  <span style={this.props.CssManager.gameSheetDownloadIcon()} />
+	</a>
+  );
 }
+}
+

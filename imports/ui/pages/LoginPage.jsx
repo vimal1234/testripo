@@ -27,7 +27,7 @@ export default class LoginPage extends Component {
     });
   }
 
-  getLang() {
+ getLang() {
     return (
       (navigator.languages && navigator.languages[0]) ||
       navigator.language ||
@@ -35,10 +35,16 @@ export default class LoginPage extends Component {
       navigator.userLanguage ||
       "en-US"
     );
-  }
+  };
 
-  render() {
-    let translator = i18n.createTranslator("Common.loginForm", this.getLang());
+
+render() {
+     
+//i18n.setLocale(getLang());
+let translator = i18n.createTranslator("Common.loginform", this.getLang()); 
+
+
+  
     const error = this.state.error;
     return (
       <div className="modal show">

@@ -1,7 +1,10 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 export default class ChatComponent extends Component {
-  render() {
-    return (
+constructor(props) {
+    super(props);
+}
+	render() {
+		return (
       <div>
         <div style={this.props.CssManager.chatContent()}>
           <div className="user-1">
@@ -26,5 +29,5 @@ export default class ChatComponent extends Component {
         </div>
       </div>
     );
-  }
+	}
 }

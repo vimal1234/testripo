@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Meteor } from "meteor/meteor";
-import TrackerReact from "meteor/ultimatejs:tracker-react";
-import LeftSidebar from "./LeftSidebar/Leftsidebar";
-import RightSidebar from "./RightSidebar/Rightsidebar";
+import LeftSidebar from "./LeftSidebar/LeftSidebar";
+import RightSidebar from "./RightSidebar/RightSidebar";
 import "./css/ChessBoard";
-import "./css/leftsidebar";
+import "./css/LeftSidebar";
 import "./css/RightSidebar";
 import MiddleBoard from "./MiddleSection/MiddleBoard";
 import RealTime from "../../../lib/client/RealTime";
-export default class MainPage extends TrackerReact(Component) {
+import TrackerReact from "meteor/ultimatejs:tracker-react";
+
+export default class MainPage extends TrackerReact(React.Component) {
   constructor(props) {
     super(props);
     this.state = {
@@ -66,11 +66,11 @@ export default class MainPage extends TrackerReact(Component) {
   }
 
   render() {
-    /* let currentUser = this.props.currentUser;
+    let currentUser = this.props.currentUser;
     let userDataAvailable = currentUser !== undefined;
     let loggedIn = currentUser && userDataAvailable;
     const gameStart = this.getingData();
-     */
+    //  const gameStart = this.gameStartData();
 
     return (
       <div className="main">
@@ -85,12 +85,12 @@ export default class MainPage extends TrackerReact(Component) {
                 }
               >
                 <div className="pull-left image">
-                  <img src="../../../images/logo-white-lg.png" alt="" />
+                  <img src="../../../images/logo-white-lg.png" />
                 </div>
                 <div className="float-right menu-close-icon">
-                  <button onClick={this.toggleMenu}  className="button-left">
+                  <a onClick={this.toggleMenu} href="#" className="button-left">
                     <span className="fa fa-fw fa-bars " />
-                  </button>
+                  </a>
                 </div>
                 <LeftSidebar />
               </div>
