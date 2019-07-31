@@ -12,6 +12,10 @@ export default class SignUpPage extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+
+//testing
+
+
   handleSubmit(e) {
     e.preventDefault();
     let name = document.getElementById("signup-name").value;
